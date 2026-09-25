@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>MERIDIAN</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; cursor: none; }
+  canvas { display: block; width: 100vw; height: 100vh; }
+  #gate { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; color: #cfc6b8;
+    font: 300 20px/1.4 Bahnschrift, 'Segoe UI', sans-serif; letter-spacing: .4em; text-transform: uppercase; cursor: pointer; }
+  #hud { position: fixed; left: 12px; top: 10px; color: #9f9; font: 12px/1.4 monospace; display: none; white-space: pre; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="gate"></div>
+<div id="hud"></div>
+<script src="src/atmo.js"></script>
+<script src="src/gl.js"></script>
+<script src="src/shaders/lib.js"></script>
+<script src="src/shaders/sky.js"></script>
+<script src="src/shaders/world.js"></script>
+<script src="src/shaders/planet.js"></script>
+<script src="src/shaders/post.js"></script>
+<script src="src/audio.js" onerror="console.warn('audio.js missing')"></script>
+<script src="src/timeline.js"></script>
+<script src="src/titles.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
